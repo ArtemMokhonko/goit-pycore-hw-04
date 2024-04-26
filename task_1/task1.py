@@ -19,9 +19,8 @@ def total_salary(path):
     except FileNotFoundError:
         print('File not found')
         return 0, 0
-    except ValueError:
-        print('wrong data')
-        return 0, 0
+    except Exception as error:
+        print(error)
     
 
 
